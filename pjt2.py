@@ -7,7 +7,7 @@ model = joblib.load("model.pkl")
 
 # App title
 st.title("Simple Linear Regression App")
-
+st.title("Simple Linear Regression App3")
 # User input
 x_value = st.number_input("Enter X value", value=1)
 
@@ -16,5 +16,6 @@ y_pred = model.predict(np.array([[x_value]]))
 
 # Show output
 st.write("Predicted Y value:", y_pred[0])
+
 
 
